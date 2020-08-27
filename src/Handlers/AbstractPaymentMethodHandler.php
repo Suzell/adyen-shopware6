@@ -475,7 +475,7 @@ abstract class AbstractPaymentMethodHandler
                 $salesChannelContext->getCurrency()->getIsoCode()
             ),
             $transaction->getOrder()->getOrderNumber(),
-            $this->configurationService->getMerchantAccount(),
+            $this->configurationService->getMerchantAccount($salesChannelContext->getSalesChannel()->getId()),
             $this->getAdyenReturnUrl($transaction->getReturnUrl()),
             $request
         );

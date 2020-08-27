@@ -116,7 +116,7 @@ class PaymentMethodsService
         }
 
         $cart = $this->cartService->getCart($context->getToken(), $context);
-        $merchantAccount = $this->configurationService->getMerchantAccount();
+        $merchantAccount = $this->configurationService->getMerchantAccount($context->getSalesChannel()->getId());
 
         if (!$merchantAccount) {
             $this->logger->error('No Merchant Account has been configured. ' .
