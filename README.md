@@ -15,6 +15,9 @@ Read our [**contribution guidelines**](https://github.com/Adyen/.github/blob/mas
 ## Requirements
 This plugin supports Shopware 6. For Shopware 5 support please see our Shopware 5 repository.
 
+## Installation
+Please use the [official documentation](https://docs.adyen.com/plugins/shopware-6) of the plugin to see how to install it.
+
 ## Documentation
 Please find the relevant documentation for
  - [How to start with Adyen](https://www.adyen.com/get-started)
